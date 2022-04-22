@@ -11,65 +11,63 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Interactive rating component</title>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
   <body>
-    <!-- Rating state start -->
-    <section class="rating-state">
-      <img class="icon-star" src="images/icon-star.svg" alt="" />
-      <div class="rating-text">
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+    <nav>
+      <img src="images/logo.svg" alt="" />
+      <ul class="nav-links-wrapper">
+        <li class="nav-links">
+          <a href="">Features</a>
+          <ul>
+            <li>test</li>
+          </ul>
+        </li>
+        <li class="nav-links"><a href="">Company</a></li>
+        <li class="nav-links"><a href="">Careers</a></li>
+        <li class="nav-links"><a href="">About</a></li>
+      </ul>
+      <div class="login-register">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
       </div>
-      <div class="value-wrapper">
-        <button class="rating-value" id="1">1</button>
-        <button class="rating-value" id="2">2</button>
-        <button class="rating-value" id="3">3</button>
-        <button class="rating-value" id="4">4</button>
-        <button class="rating-value" id="5">5</button>
-      </div>
-      <input class="submit" type="submit" value="submit" />
-    </section>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <section class="thanks-state">
-      <img class="thanks-img" src="images/illustration-thank-you.svg" alt="" />
-      <!-- You selected -->
-      <!-- Add rating here -->
-      <div class="selected">You selected 4 out of 5</div>
-      <div class="thanks-text">
-        <h1>Thank you!</h1>
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
+    </nav>
+    <section class="main-sec">
+      <div class="sec-text">
+        <h1 class="sec-text-title">Make remote work</h1>
+        <p class="sec-text-desc">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
         </p>
+        <button class="learn-more">Learn more</button>
+      </div>
+      <div class="sec-img">
+        <img src="images/image-hero-desktop.png" alt="" />
       </div>
     </section>
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
-
     <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-    <script src="script.js"></script>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
   </body>
 </html>
