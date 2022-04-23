@@ -25,38 +25,70 @@ body {
 }
 
 nav {
-  padding: 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
   display: grid;
-  grid-template-columns: 1fr 6fr 1.2fr;
+  grid-template-columns: 1fr 8fr 2fr;
   align-items: center;
 }
 
 .nav-links-wrapper {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  text-decoration: none;
-  text-align: center;
 }
 
 .nav-links {
   position: relative;
   padding: 0rem 1rem;
+  top: -3px;
+  left: 3px;
 }
 
 .nav-links-dropdown {
   position: absolute;
-  left: 0;
-  top: calc(100% + 0.5rem);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  right: 1.5rem;
+  top: 2.25rem;
   background-color: white;
-  padding: 0.75rem;
+  padding: 1.2rem;
   border-radius: 10px;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
   line-height: 2rem;
   pointer-events: none;
   opacity: 0;
   transform: translateY(-10px);
+  min-width: 153px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  text-align: left;
+}
+
+.nav-links-dropdown-company {
+  position: absolute;
+  left: 1rem;
+  top: 2.25rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
+  line-height: 2rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  min-width: 120px;
+  height: 128px;
+  text-align: left;
+  justify-content: center;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.nav-links-dropdown-feature {
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .links {
@@ -67,7 +99,31 @@ nav {
   cursor: pointer;
 }
 
-.nav-links > .links:focus + .nav-links-dropdown {
+.dropdown {
+  color: var(--Medium-Gray);
+  position: relative;
+  align-items: center;
+  top: -3px;
+  left: 8px;
+  font-weight: 500;
+}
+
+.dropdown-company {
+  color: var(--Medium-Gray);
+  position: relative;
+  align-items: center;
+  left: 8px;
+  font-weight: 500;
+}
+
+.dropdown-img {
+  position: relative;
+  top: 1px;
+  left: 7px;
+}
+
+.nav-links > .links:focus + .nav-links-dropdown,
+.nav-links > .links:focus + .nav-links-dropdown-company {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -85,17 +141,23 @@ a:hover {
   cursor: pointer;
 }
 
+.login-register {
+  position: relative;
+  top: -3px;
+  left: 21px;
+}
+
 .login {
   background-color: var(--Almost-White);
   border: none;
-  padding: 0px 2rem;
+  padding: 0px 2.4rem 0px 2rem;
   cursor: pointer;
 }
 
 .register {
   background-color: var(--Almost-White);
   border-radius: 1px solid var(--Almost-Black);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.4rem;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -107,8 +169,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   padding: 3rem;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   place-items: center;
 }
 
@@ -135,6 +195,7 @@ a:hover {
   background-color: black;
   color: var(--Almost-White);
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .sec-img {
