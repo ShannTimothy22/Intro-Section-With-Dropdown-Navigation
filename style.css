@@ -55,8 +55,8 @@ nav {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
   line-height: 2rem;
   pointer-events: none;
-  opacity: 0;
-  transform: translateY(-10px);
+  opacity: 1;
+  /* transform: translateY(-10px); */
   min-width: 153px;
   height: 160px;
   justify-content: center;
@@ -76,8 +76,8 @@ nav {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
   line-height: 2rem;
   pointer-events: none;
-  opacity: 0;
-  transform: translateY(-10px);
+  opacity: 1;
+  /* transform: translateY(-10px); */
   min-width: 120px;
   height: 128px;
   text-align: left;
@@ -173,7 +173,7 @@ a:hover {
 }
 
 .sec-text {
-  margin: 0px 5rem;
+  margin: 6rem 2rem 2rem 7rem;
 }
 
 .sec-text-title {
@@ -204,5 +204,6 @@ a:hover {
 
 .img-hero {
   max-width: 400px;
-  padding: 2rem;
+  position: relative;
+  top: -3rem;
 }
