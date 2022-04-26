@@ -20,6 +20,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--Almost-Black);
+}
+
 body {
   background-color: var(--Almost-White);
 }
@@ -64,6 +69,7 @@ nav {
   place-items: center;
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   text-align: left;
+  cursor: pointer;
 }
 
 .nav-links-dropdown-company {
@@ -89,14 +95,21 @@ nav {
   position: relative;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .links {
   background-color: var(--Almost-White);
+  color: var(--Medium-Gray);
   border: none;
   pointer-events: auto;
   font-size: 16px;
   cursor: pointer;
+}
+
+.links:hover {
+  color: var(--Almost-Black);
+  transition: all 0.5s ease;
 }
 
 .dropdown {
@@ -106,6 +119,7 @@ nav {
   top: -3px;
   left: 8px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .dropdown-company {
@@ -130,15 +144,6 @@ nav {
 
 .arrow-down {
   padding-left: 0.25rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--Almost-Black);
-}
-
-a:hover {
-  cursor: pointer;
 }
 
 .login-register {
@@ -173,23 +178,24 @@ a:hover {
 }
 
 .sec-text {
-  margin: 6rem 2rem 2rem 7rem;
+  margin: 1.6rem 2rem 2rem 7rem;
 }
 
 .sec-text-title {
-  font-size: 72px;
+  font-size: 80px;
 }
 
 .sec-text-desc {
-  text-align: justify;
+  text-align: left;
   font-size: 18px;
   color: var(--Medium-Gray);
-  margin: 3rem 8.5rem 3rem 0;
-  line-height: 1.5rem;
+  margin: 3rem 5rem 3.5rem 0;
+  line-height: 1.7rem;
+  word-spacing: 3px;
 }
 
 .learn-more {
-  padding: 1rem 1.5rem;
+  padding: 1.1rem 1.8rem;
   font-size: 18px;
   font-weight: 500;
   background-color: black;
@@ -198,12 +204,20 @@ a:hover {
   cursor: pointer;
 }
 
+.learn-more:hover {
+  color: black;
+  background-color: var(--Almost-White);
+  transition: all 0.5s ease;
+}
+
 .sec-img {
-  padding: 2rem 2rem 0 0;
+  padding: 6.2rem 2.2rem 0 0;
 }
 
 .img-hero {
-  max-width: 400px;
+  max-width: 535px;
+  padding-left: 3rem;
   position: relative;
-  top: -3rem;
+  top: -6.5rem;
+  left: 0.45rem;
 }
