@@ -37,7 +37,7 @@
     <nav class="navbar container">
       <img class="logo" src="images/logo.svg" alt="" />
       <img class="aside" id="btn" src="images/icon-menu.svg" alt="" />
-      <div class="sidebar active">
+      <div class="sidebar" data-visible="false">
         <ul class="nav-list">
           <img
             class="close"
@@ -48,10 +48,19 @@
           <li class="nav-links">
             <button class="links" id="feature" href="">
               Features
-              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img
+                class="arrow-downF"
+                src="images/icon-arrow-down.svg"
+                alt=""
+              />
+              <img
+                class="arrow-upF active"
+                src="images/icon-arrow-up.svg"
+                alt=""
+              />
             </button>
             <div class="nav-links-dropdown">
-              <ul class="nav-links-dropdown-feature active">
+              <ul class="nav-links-dropdown-feature" data-visible="false">
                 <li class="dropdown">
                   <img class="dropdown-img" src="images/icon-todo.svg" />
                   <a class="links" href="#">Todo List</a>
@@ -74,10 +83,19 @@
           <li class="nav-links">
             <button class="links" id="company" href="">
               Company
-              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img
+                class="arrow-downC"
+                src="images/icon-arrow-down.svg"
+                alt=""
+              />
+              <img
+                class="arrow-upC active"
+                src="images/icon-arrow-up.svg"
+                alt=""
+              />
             </button>
             <div class="nav-links-dropdown">
-              <ul class="nav-links-dropdown-company active">
+              <ul class="nav-links-dropdown-company" data-visible="false">
                 <li class="dropdown-company">
                   <a class="links" href="#">History</a>
                 </li>

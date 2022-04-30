@@ -79,6 +79,7 @@ section {
 .aside {
   position: absolute;
   right: 2rem;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -91,14 +92,22 @@ section {
   background-color: var(--Almost-White);
   padding-top: 3rem;
   z-index: 99;
-  transition: all 0.5s ease;
+  transform: translateX(100%);
+  transition: all 350ms ease-in-out;
+}
+
+.sidebar[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 .sidebar .close {
   position: absolute;
   bottom: 94%;
   left: 80%;
+  cursor: pointer;
 }
+
+/* nav-links */
 
 .nav-list {
   line-height: 2.5;
@@ -126,7 +135,19 @@ section {
   padding: 1rem 0;
 }
 
-.nav-list .nav-links .arrow-down {
+.nav-list .nav-links .arrow-downF {
+  padding-left: 1rem;
+}
+
+.nav-list .nav-links .arrow-upF {
+  padding-left: 1rem;
+}
+
+.nav-list .nav-links .arrow-downC {
+  padding-left: 1rem;
+}
+
+.nav-list .nav-links .arrow-upC {
   padding-left: 1rem;
 }
 
@@ -134,8 +155,14 @@ section {
   display: flex;
 }
 
+.nav-list .nav-links .nav-links-dropdown .nav-links-dropdown-feature {
+  opacity: 0;
+  height: 0;
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
+}
+
 .nav-list .nav-links .nav-links-dropdown .dropdown {
-  /* display: none; */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -143,8 +170,23 @@ section {
 }
 
 .nav-list .nav-links .nav-links-dropdown-company {
-  flex-direction: column;
-  transform: translateX(-5px);
+  opacity: 0;
+  height: 0;
+  transform: translateY(-10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-list
+  .nav-links
+  .nav-links-dropdown
+  .nav-links-dropdown-feature[data-visible="true"],
+.nav-list
+  .nav-links
+  .nav-links-dropdown
+  .nav-links-dropdown-company[data-visible="true"] {
+  opacity: 1;
+  height: 100%;
+  transform: translateY(0%);
 }
 
 .nav-list .nav-links .nav-links-dropdown .dropdown .links {
