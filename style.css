@@ -64,7 +64,7 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1430px) {
   nav,
   section {
     padding: 2rem 0;
