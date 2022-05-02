@@ -259,7 +259,7 @@ p {
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1439px) {
   nav {
     display: flex;
     align-items: center;
