@@ -64,7 +64,7 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media all and (max-width: 1430px) {
+@media all and (max-width: 1439px) {
   nav,
   section {
     padding: 2rem 0;
@@ -259,7 +259,7 @@ p {
   }
 }
 
-@media all and (min-width: 1439px) {
+@media all and (min-width: 1440px) {
   nav {
     display: flex;
     align-items: center;
